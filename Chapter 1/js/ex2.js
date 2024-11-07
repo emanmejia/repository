@@ -9,5 +9,5 @@ console.log("Goodbye!");
 console.log("Hell my name is Emmanuel!");
 console.log("Let's do some math");
 console.log(4 + 20);
-console.log(120 / 3);
+console.log(120 / 0);
 console.log("Peace out, bean sprout!");

@@ -1,24 +1,15 @@
-const values = [3, 11, 7, 2, 9, 10];
+// Parameter Passing
+// A parameter is information that the function needs in order to work.
+// The function paramets are defined in parantheses immediately following the name of the function.  You can then use the parameter value in the body of the function.
 
-let sum = 0;
-let min = values[0];
-let max = values[0];
+// You supply the parameter value when calling the function.  This value is called an argument.
 
-// Iterate through the array
-for (let i = 0; i < values.length; i++) {
-    sum += values[i]; // Calculate sum
+// Let's edit EX3 to add a personalized greeting.
 
-    // Update minimum value
-    if (values[i] < min) {
-        min = values[i];
-    }
-
-    // Update maximum value
-    if (values[i] > max) {
-        max = values[i];
-    }
+function sayHello(name) {
+  const message = `Hello, ${name}!`
+  return message;
 }
 
-console.log(`Sum of all array values: ${sum}`);
-console.log(`Minimum value: ${min}`);
-console.log(`Maximum value: ${max}`);
+console.log(sayHello("Emmanuel"));
+console.log(sayHello("Jose"));

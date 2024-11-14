@@ -1,22 +1,10 @@
-const words = [];
-let input;
+// When calling a function respecting the name and order of parameters is paramount!  
 
-while (true) {
-    input = prompt("Please enter a word (type 'stop' to finish):");
-    
-    // Check if the input is "stop" (case insensitive)
-    if (input.toLowerCase() === "stop") {
-        break; // Exit the loop
-    }
-    
-    // Add the input to the array
-    words.push(input);
+function presentation(name, age) {
+  console.log(`Your name is ${name} and you're age is ${age} years old`);
 }
 
-// Display the results
-if (words.length === 0) {
-    console.log("No words to display, Stop was the first word entered.");
-} else {
-    console.log("You entered the following words:");
-    words.forEach(word => console.log(word));
-}
+presentation("Isabelle", 19); // "Your name is Isabelle and you're 19 years old."
+presentation(5, "Brandon"); // "Your name is 5 and you're Brandon years old."
+
+// The second call arguments are given in reverse order, so name gets the value 5 and age gets the "Brandon" for the call.

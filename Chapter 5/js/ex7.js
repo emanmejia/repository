@@ -1,30 +1,8 @@
-// Function to count vowels in a word
-function countVowels(word) {
-  const vowels = "aeiouy";
-  let count = 0;
-  for (let char of word.toLowerCase()) {
-      if (vowels.includes(char)) {
-          count++;
-      }
-  }
-  return count;
-}
+// Declaration is not the only way to create functions in JavaScript.  Check out this example.
 
-// Function to check if a word is a palindrome
-function isPalindrome(word) {
-  const lowerCaseWord = word.toLowerCase();
-  const reversedWord = lowerCaseWord.split('').reverse().join('');
-  return lowerCaseWord === reversedWord;
-}
+const hello = function(name) {
+  const message = `Hello, ${name}!`;
+  return message;
+};
 
-// Main program
-const inputWord = prompt("Please enter a word:");
-
-const vowelCount = countVowels(inputWord);
-const palindromeCheck = isPalindrome(inputWord);
-
-if (palindromeCheck) {
-  console.log(`${inputWord} contains ${vowelCount} vowels and is a palindrome.`);
-} else {
-  console.log(`${inputWord} contains ${vowelCount} vowels and is not a palindrome.`);
-}
+console.log(hello("Richard")); // "Hello, Richard"

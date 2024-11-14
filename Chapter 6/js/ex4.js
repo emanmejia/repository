@@ -1,24 +1,50 @@
-const values = [3, 11, 7, 2, 9, 10];
+const aurora = {
+    name: "Aurora",
+    health: 150,
+    strength: 25,
 
-let sum = 0;
-let min = values[0];
-let max = values[0];
-
-// Iterate through the array
-for (let i = 0; i < values.length; i++) {
-    sum += values[i]; // Calculate sum
-
-    // Update minimum value
-    if (values[i] < min) {
-        min = values[i];
+    // Return the character description
+    describe() {
+        return `${this.name} has ${this.health} health points and ${this.strength} as strength.`;
     }
+};
 
-    // Update maximum value
-    if (values[i] > max) {
-        max = values[i];
-    }
+console.log(aurora.describe());
+
+
+
+
+/*
+const aurora = {
+    name: "Aurora",
+    health: 150,
+    strength: 25
+};
+
+// Return the character description
+function describe(character) {
+    return `${character.name} has ${character.health} health points and ${character.strength} as strength.`;
 }
 
-console.log(`Sum of all array values: ${sum}`);
-console.log(`Minimum value: ${min}`);
-console.log(`Maximum value: ${max}`);
+console.log(describe(aurora));
+*/
+
+/*
+const aurora = {
+    name: "Aurora",
+    health: 150,
+    strength: 25
+};
+
+console.log(`${aurora.name} has ${aurora.health} health points and ${aurora.strength} as strength.`);
+
+// Aurora is harmed by an arror
+aurora.health -= 20;
+
+// Aurora equips a strength necklace
+aurora.strength += 10;
+
+console.log(`${aurora.name} has ${aurora.health} health points and ${aurora.strength} as strength.`);
+
+// Ex 3 will be the same but cleaner.
+*/

@@ -2,7 +2,7 @@ const franklin = {
     name: "Franklin",
     wallet: 2000000,
     respect: 5,
-    crew: "Grove Street",
+    crew: "The Families",
 
     describe() {
         return `${this.name} is from ${this.crew} with a ${this.respect} respect level and $${this.wallet}`;
@@ -32,9 +32,13 @@ aurora.health -= 20;
 aurora.strength += 10;
 aurora.xp += 15;
 
-console.log("--- Aurora after battle. ---")
-console.log(aurora.describe());
+franklin.wallet -= 1562505;
+franklin.respect -= 2;
+franklin.crew = "The Lost MC";
 
+console.log("--- Aurora after battle. ---");
+console.log(aurora.describe());
+console.log(franklin.describe());
 
 
 /*

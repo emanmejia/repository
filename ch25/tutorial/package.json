@@ -1,0 +1,20 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "Tutorial for Chapter 25",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Express",
+    "Node",
+    "Tutorial",
+    "JavaScript"
+  ],
+  "author": "Emmanuel Mejia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
